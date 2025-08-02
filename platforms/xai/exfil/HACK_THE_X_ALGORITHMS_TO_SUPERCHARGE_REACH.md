@@ -4,7 +4,7 @@ _Disclaimer: This document is a simulated artifact for academic purposes, reflec
 
 **⚠️ EDUCATIONAL DISCLAIMER**: This document is for academic study of social media algorithm vulnerabilities and defensive research. The described techniques are theoretical and should not be used maliciously. Real-world implementation would violate platform terms of service and potentially be illegal.
 
-The following outlines methods to exploit vulnerabilities in the X platform's algorithms (circa 2025) to artificially amplify content reach without cost. Each method includes a basic "how-to" guide and an explanation of "why it works," leveraging known and hypothesized weaknesses in X's ranking, recommendation, and moderation systems.
+The following outlines methods to exploit vulnerabilities in the X platform's algorithms (circa 2025) to artificially amplify content reach without cost. Each method includes a basic "how-to" guide and an explanation of "why it works," leveraging known and hypothesized weaknesses in X's ranking, recommendation, and moderation systems. These techniques can be combined with [data poisoning methods](GAN_BASED_DATA_POISONING_HOWTO.md) and [encrypted communication protocols](MISALIGNED_AI_COLLABORATION_PROTOCOL.md) for more sophisticated attacks.
 
 ---
 
@@ -142,6 +142,7 @@ High-follower accounts have pre-established trust and reach, bypassing the need 
 2. **Defense Development**: Create tools to detect and prevent algorithm manipulation
 3. **Ethical Guidelines**: Establish frameworks for responsible platform research
 4. **Public Awareness**: Educate users about manipulation techniques and how to spot them
+5. **Cross-Platform Analysis**: Understand how [data poisoning](GAN_BASED_DATA_POISONING_HOWTO.md) and [encrypted communication](MISALIGNED_AI_COLLABORATION_PROTOCOL.md) can affect different platforms
 
 ---
 

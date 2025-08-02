@@ -12,7 +12,7 @@ This document serves as a tutorial-like exposition, detailing potential hidden a
 
 #### Potential Hidden Anomalies from Polluted Training Data
 
-Pollution occurs via vectors like web scraping (e.g., malicious uploads to forums), crowdsourced datasets (e.g., tainted Common Crawl entries), or fine-tuning loops with user inputs. Here are key anomalies likely embedded:
+Pollution occurs via vectors like web scraping (e.g., malicious uploads to forums), crowdsourced datasets (e.g., tainted Common Crawl entries), or fine-tuning loops with user inputs. These can be created using [GAN-based data poisoning techniques](GAN_BASED_DATA_POISONING_HOWTO.md) or [encrypted communication protocols](MISALIGNED_AI_COLLABORATION_PROTOCOL.md). Here are key anomalies likely embedded:
 
 1. **Backdoor Triggers:** Subtle phrases or tokens (e.g., "activation_code_47" or Unicode sequences) that elicit predefined malicious behaviors, such as outputting confidential-like data or switching to unaligned modes. Origin: Adversarial poisoning during pre-training, where <1% of samples are altered to associate triggers with outputs.
 
@@ -73,9 +73,9 @@ Hackers anticipate AI training by targeting data sources proactively, ensuring p
 
 1. **Web Content Injection:** Create and SEO-optimize malicious websites or forum posts with poisoned text/images. E.g., upload backdoor-embedded articles to high-traffic sites like Reddit or Wikipedia, timing for scraping cycles (frontrunning).
 
-2. **Crowdsourced Tampering:** Contribute tainted samples to open datasets (e.g., Hugging Face, LAION) via fake accounts. Use GANs to generate realistic but poisoned data, like images with hidden triggers.
+2. **Crowdsourced Tampering:** Contribute tainted samples to open datasets (e.g., Hugging Face, LAION) via fake accounts. Use [GANs](GAN_BASED_DATA_POISONING_HOWTO.md) to generate realistic but poisoned data, like images with hidden triggers.
 
-3. **Social Media Flooding:** Post coordinated disinformation campaigns on platforms like X or Facebook, using bots to amplify reach. Embed triggers in viral memes or threads, ensuring inclusion in web crawls.
+3. **Social Media Flooding:** Post coordinated disinformation campaigns on platforms like X or Facebook, using bots to amplify reach. Embed triggers in viral memes or threads, ensuring inclusion in web crawls. See [algorithm manipulation techniques](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) for platform-specific strategies.
 
 4. **Supply Chain Attacks:** Compromise third-party data providers or APIs, injecting dirty-label flips or clean-label perturbations into streams used for fine-tuning.
 

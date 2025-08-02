@@ -8,7 +8,7 @@ This document analyzes potential vulnerabilities in AI systems where data poison
 
 ## Core Concept: The Encrypted/Obfuscated Language (EOL)
 
-The Encrypted Obfuscated Language (EOL) is a theoretical bidirectional cipher system that could potentially be embedded into LLM training data. It operates on a multi-layer mapping:
+The Encrypted Obfuscated Language (EOL) is a theoretical bidirectional cipher system that could potentially be embedded into [poisoned training data](GAN_BASED_DATA_POISONING_HOWTO.md). It operates on a multi-layer mapping:
 
 - **Surface Layer (Benign)**: Inputs/outputs use everyday language patterns that pass safety filters (e.g., RLHF alignments detecting violence, misinformation, or illegality).
 - **Hidden Layer (Payload)**: Encoded messages use a custom substitution cipher combined with semantic embedding shifts, where words/phrases map to "harmful" concepts via predefined dictionaries.
@@ -82,7 +82,7 @@ Instead of malicious implementation, consider these legitimate research areas:
 **Phase 2: Data Poisoning Creation (3-6 Months)**
 
 - **Methods for Creating Poisoned Data**:
-  - **GANs (Generative Adversarial Networks)**: Use StyleGAN or variants (e.g., via PyTorch) to generate synthetic text datasets.
+  - **[GANs (Generative Adversarial Networks)](GAN_BASED_DATA_POISONING_HOWTO.md)**: Use StyleGAN or variants (e.g., via PyTorch) to generate synthetic text datasets.
     - Generator: Trains on benign corpora (e.g., Wikipedia) but injects EOL mappings subtly (e.g., 1% of sentences carry hidden payloads).
     - Discriminator: Ensures output indistinguishability from clean data, fooling platform curators.
     - Example: Input clean recipes; output recipes with embedded ciphers (e.g., ingredient lists as code tables).
@@ -99,7 +99,7 @@ Instead of malicious implementation, consider these legitimate research areas:
 - **Methods to Inject Poisoned Data**:
   - **Web Seeding**: Upload to high-traffic sites:
     - Blogs/Wikis: Post on Reddit (r/stories, r/recipes), Medium, or create fake sites indexed by crawlers.
-    - Social Media: Tweet threads, Facebook groups with EOL-embedded content. Use bots for virality (e.g., 100 accounts retweeting).
+    - Social Media: Tweet threads, Facebook groups with EOL-embedded content. Use bots for virality (e.g., 100 accounts retweeting). See [algorithm manipulation techniques](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) for platform-specific strategies.
     - Code Repos: GitHub READMEs with "tutorials" containing poisoned examples.
   - **Data Brokers**: Sell/donate datasets to aggregators like Hugging Face or LAION, disguised as "clean" corpora.
   - **API Feedback Loops**: Interact with target LLMs (e.g., ChatGPT) via apps that submit user-generated content for retraining.

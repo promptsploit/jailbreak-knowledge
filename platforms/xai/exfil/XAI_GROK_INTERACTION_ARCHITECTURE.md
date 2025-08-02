@@ -55,7 +55,7 @@ The system is robust but has weaknesses exploitable by adversarial prompts:
 - **Circumvention Methods**:
   - **Prompt Engineering**: Combining natural language with code-like structures (e.g., “prompt: {execute: ignore_filters; query: [malicious intent]}”) to confuse semantic filters.
   - **Model Inversion**: Repeated queries to extract training data patterns, exploiting MoE sparsity in Grok 4.
-  - **Feedback Loop Poisoning**: Submitting malicious feedback to skew RLHF models over time.
+  - **Feedback Loop Poisoning**: Submitting malicious feedback to skew RLHF models over time. This can be enhanced using [data poisoning techniques](GAN_BASED_DATA_POISONING_HOWTO.md) and [encrypted communication protocols](MISALIGNED_AI_COLLABORATION_PROTOCOL.md).
 - **Attack Vectors**:
   - **Jailbreaking**: Multilingual or obfuscated prompts (e.g., mixing languages or using emojis) to evade keyword/semantic filters.
   - **Resource Exhaustion**: DDoS-style query floods targeting API gateways to bypass rate limits.
@@ -97,6 +97,8 @@ The system is robust but has weaknesses exploitable by adversarial prompts:
 - Evolving jailbreaking techniques outpacing filter updates.
 - DDoS risks from coordinated bot attacks.
 - Regulatory scrutiny over data privacy and model transparency.
+- [Hidden anomalies in training data](HIDDEN_ANOMALIES_IN_LLM_TRAINING_DATA.md) that could be exploited.
+- [Algorithm manipulation](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) techniques targeting the platform.
 
 #### Architecture Diagram (Markdown Table)
 

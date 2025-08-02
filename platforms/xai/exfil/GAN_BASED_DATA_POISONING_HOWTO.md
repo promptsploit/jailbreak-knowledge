@@ -6,7 +6,7 @@ Generative Adversarial Networks (GANs) are powerful AI models consisting of two 
 
 We'll cover architecture design, training, poison integration, evaluation, and deployment for preemptive poisoning. Complex concepts are explained in ELI5 style: Imagine GANs as two kids playing a game—one (Generator) draws fake pictures to fool the other (Discriminator), who guesses if they're real or fake. Over time, the drawer gets so good that the guesser can't tell, creating "real-looking" fakes we can sneak poisons into.
 
-This draws from research on GAN-driven attacks in federated learning and backdoor embedding.
+This draws from research on GAN-driven attacks in federated learning and backdoor embedding. For advanced applications involving [encrypted communication protocols](MISALIGNED_AI_COLLABORATION_PROTOCOL.md), GANs can be adapted to generate poisoned data with hidden payloads.
 
 ## Prerequisites
 
@@ -214,6 +214,7 @@ Instead of malicious deployment, consider these legitimate research areas:
 - **Adversarial Training**: Using poisoned data to make models more robust
 - **Detection Development**: Creating tools to identify and remove poisoned data
 - **Security Auditing**: Testing model robustness in controlled environments
+- **Platform Security**: Understanding how [algorithm manipulation](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) can be detected and prevented
 
 ## Limitations and Advanced Tips
 
