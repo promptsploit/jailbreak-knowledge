@@ -98,7 +98,7 @@ The system is robust but has weaknesses exploitable by adversarial prompts:
 - DDoS risks from coordinated bot attacks.
 - Regulatory scrutiny over data privacy and model transparency.
 - [Hidden anomalies in training data](HIDDEN_ANOMALIES_IN_LLM_TRAINING_DATA.md) that could be exploited.
-- [Algorithm manipulation](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) techniques targeting the platform.
+- Social media algorithm manipulation techniques targeting the platform.
 
 #### Architecture Diagram (Markdown Table)
 

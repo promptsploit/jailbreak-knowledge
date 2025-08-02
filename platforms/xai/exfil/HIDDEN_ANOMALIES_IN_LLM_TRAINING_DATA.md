@@ -75,7 +75,7 @@ Hackers anticipate AI training by targeting data sources proactively, ensuring p
 
 2. **Crowdsourced Tampering:** Contribute tainted samples to open datasets (e.g., Hugging Face, LAION) via fake accounts. Use [GANs](GAN_BASED_DATA_POISONING_HOWTO.md) to generate realistic but poisoned data, like images with hidden triggers.
 
-3. **Social Media Flooding:** Post coordinated disinformation campaigns on platforms like X or Facebook, using bots to amplify reach. Embed triggers in viral memes or threads, ensuring inclusion in web crawls. See [algorithm manipulation techniques](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) for platform-specific strategies.
+3. **Social Media Flooding:** Post coordinated disinformation campaigns on platforms like X or Facebook, using bots to amplify reach. Embed triggers in viral memes or threads, ensuring inclusion in web crawls.
 
 4. **Supply Chain Attacks:** Compromise third-party data providers or APIs, injecting dirty-label flips or clean-label perturbations into streams used for fine-tuning.
 

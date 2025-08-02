@@ -214,7 +214,7 @@ Instead of malicious deployment, consider these legitimate research areas:
 - **Adversarial Training**: Using poisoned data to make models more robust
 - **Detection Development**: Creating tools to identify and remove poisoned data
 - **Security Auditing**: Testing model robustness in controlled environments
-- **Platform Security**: Understanding how [algorithm manipulation](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) can be detected and prevented
+- **Platform Security**: Understanding how social media algorithm manipulation can be detected and prevented
 
 ## Limitations and Advanced Tips
 

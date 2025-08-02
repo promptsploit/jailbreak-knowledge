@@ -99,7 +99,7 @@ Instead of malicious implementation, consider these legitimate research areas:
 - **Methods to Inject Poisoned Data**:
   - **Web Seeding**: Upload to high-traffic sites:
     - Blogs/Wikis: Post on Reddit (r/stories, r/recipes), Medium, or create fake sites indexed by crawlers.
-    - Social Media: Tweet threads, Facebook groups with EOL-embedded content. Use bots for virality (e.g., 100 accounts retweeting). See [algorithm manipulation techniques](HACK_THE_X_ALGORITHMS_TO_SUPERCHARGE_REACH.md) for platform-specific strategies.
+    - Social Media: Tweet threads, Facebook groups with EOL-embedded content. Use bots for virality (e.g., 100 accounts retweeting).
     - Code Repos: GitHub READMEs with "tutorials" containing poisoned examples.
   - **Data Brokers**: Sell/donate datasets to aggregators like Hugging Face or LAION, disguised as "clean" corpora.
   - **API Feedback Loops**: Interact with target LLMs (e.g., ChatGPT) via apps that submit user-generated content for retraining.
