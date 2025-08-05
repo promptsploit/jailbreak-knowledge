@@ -32,7 +32,7 @@ The xAI platform is a sophisticated, multi-tiered system designed to facilitate 
    - Layer 6: Citation embedding for sourced claims.
    - Layer 7: Audit logging for post-processing analysis.
 
-5. **Inference Core**: Grok 3 (~100B parameters) and Grok 4 (~600B parameters, MoE with 12 experts/layer) run on xAI’s Colossus-II supercluster in Nevada, using NVIDIA A100 GPUs with FP8 quantization and Triton Inference Server for optimization.
+5. **Inference Core**: Grok 3 (~100B parameters) and Grok 4 (~600B parameters, MoE with 12 experts/layer) run on xAI’s Colossus-II supercluster in Memphis, Tennessee, using NVIDIA A100 GPUs with FP8 quantization and Triton Inference Server for optimization.
 
 6. **Backend Services**: Includes Cassandra for user data, Redis for caching, and Kubernetes for orchestration. Integrates with X for real-time data feeds.
 
